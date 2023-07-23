@@ -1,8 +1,35 @@
-
 export default function HomePage() {
     return (
-        <div>
-            Hello, World!
+        <div className="flex flex-col gap-6 p-6 text-justify">
+            <div className="text-xl">Dexcom Code Challenge by Albert Sanchez</div>
+            <div>
+                <div className="text-xl font-bold">Problem 1</div>
+                Given a list nums of n integers where nums[i] is in the range [1, list length], write a function that solves the following
+                problem; return a list of all the integers in the range [1, list length] that do not appear in nums.
+            </div>
+            <div>
+                <div className="font-bold">Examples</div>
+                <div>#1 Where nums = [4, 3, 2, 7, 8, 2, 3, 1], the result is [5, 6] </div>
+                <div>#2 Where nums = [1, 1], the result is [2]</div>
+            </div>
+            <div className="font-bold">Solution</div>
+            <div className="font-bold">Time and Space Complexity</div>
+            <div className="font-bold">Demo</div>
+            <div>
+                <div className="text-xl font-bold">Problem 2</div>
+                Given a list of integers nums and an integer target, write a function that solves the following problem; return indices of
+                the two numbers such that they add up to target. You may assume that each input would have exactly one solution, and you may
+                not use the same element twice. You can return the answer in any order.
+            </div>
+            <div>
+                <div className="font-bold">Examples</div>
+                <div>#1 Where nums = [2, 7, 11, 15] and target = 9, the result is [0, 1]</div>
+                <div>#2 Where nums = [3, 2, 4] and target = 6, the result is [1, 2]</div>
+                <div>#3 Where nums = [3, 3] and target = 6, the result is [0, 1]</div>
+            </div>
+            <div className="font-bold">Solution</div>
+            <div className="font-bold">Time and Space Complexity</div>
+            <div className="font-bold">Demo</div>
         </div>
     )
 }
