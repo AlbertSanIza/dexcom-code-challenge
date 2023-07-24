@@ -6,7 +6,7 @@ This is a code challenge requested by Dexcom and submitted by [Albert Sanchez](h
 
 ## Requirements
 
--   [NodeJS LTS](https://nodejs.org/en/) v18.16.0
+-   [NodeJs LTS](https://nodejs.org/en/) v18.16.0
 -   [NPM](https://nodejs.org/en/) v9.5.1
 -   [Yarn](https://classic.yarnpkg.com/lang/en/docs/install) v1.22.19
 
