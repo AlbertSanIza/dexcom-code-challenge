@@ -30,7 +30,7 @@ $ yarn test
 
 Open http://localhost:3000 with your browser to see the result.
 
-You can also go to https://dexcom-code-challenge.vercel.app/ for a version already online and ready to use.
+You can also go to https://dexcom-code-challenge.vercel.app for a version already online and ready to use.
 
 ## Solutions
 
