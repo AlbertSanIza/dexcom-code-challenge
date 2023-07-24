@@ -55,7 +55,7 @@ export default function TestComponent() {
                     </label>
                     <input
                         placeholder="[2, 7, 11, 15]"
-                        className="w-full rounded-md border-0 p-2 ring-1 ring-inset ring-gray-200"
+                        className="w-full appearance-none rounded-md border-0 p-2 ring-1 ring-inset ring-gray-200"
                         value={nums}
                         onChange={onNumsChange}
                     ></input>
@@ -66,7 +66,7 @@ export default function TestComponent() {
                     </label>
                     <input
                         placeholder="9"
-                        className="w-full rounded-md border-0 p-2 ring-1 ring-inset ring-gray-200"
+                        className="w-full appearance-none rounded-md border-0 p-2 ring-1 ring-inset ring-gray-200"
                         value={target}
                         onChange={onTargetChange}
                     ></input>

@@ -44,7 +44,7 @@ export default function TestComponent() {
                     </label>
                     <input
                         placeholder="[4, 3, 2, 7, 8, 2, 3, 1]"
-                        className="w-full rounded-md border-0 p-2 ring-1 ring-inset ring-gray-200"
+                        className="w-full appearance-none rounded-md border-0 p-2 ring-1 ring-inset ring-gray-200"
                         value={nums}
                         onChange={onChange}
                     ></input>
