@@ -31,7 +31,7 @@ export default function TestComponent() {
             body: JSON.stringify({ nums: JSON.parse(nums) }),
         })
         const data = await response.json()
-        setResult(JSON.stringify(data, null, 2))
+        setResult(JSON.stringify(data, null, 4))
     }
 
     return (
