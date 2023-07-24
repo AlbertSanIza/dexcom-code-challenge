@@ -22,6 +22,10 @@ $ yarn install
 
 # Run Dev
 $ yarn dev
+
+# Unit Testing
+$ yarn test
+
 ```
 
 Open http://localhost:3000 with your browser to see the result.
