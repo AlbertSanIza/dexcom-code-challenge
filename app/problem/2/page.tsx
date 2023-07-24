@@ -1,6 +1,10 @@
 import Button from '@/components/Button'
+import Code from '@/components/Code'
+import getSolutionString from '@/utils/getSolutionString'
 
-export default function ProblemTwoPage() {
+export default async function ProblemTwoPage() {
+    const solutionString = await getSolutionString(2)
+
     return (
         <div className="flex flex-col gap-6 p-6 text-justify">
             <div>
@@ -18,9 +22,10 @@ export default function ProblemTwoPage() {
                 <div>#2 Where nums = [3, 2, 4] and target = 6, the result is [1, 2]</div>
                 <div>#3 Where nums = [3, 3] and target = 6, the result is [0, 1]</div>
             </div>
-            <div className="font-bold">Solution</div>
-            <div className="font-bold">Time and Space Complexity</div>
-            <div className="font-bold">Demo</div>
+            <div>
+                <div className="font-bold">Solution</div>
+                <Code text={solutionString} />
+            </div>
         </div>
     )
 }

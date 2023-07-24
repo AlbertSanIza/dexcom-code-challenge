@@ -1,6 +1,10 @@
 import Button from '@/components/Button'
+import Code from '@/components/Code'
+import getSolutionString from '@/utils/getSolutionString'
 
-export default function ProblemOnePage() {
+export default async function ProblemOnePage() {
+    const solutionString = await getSolutionString(1)
+
     return (
         <div className="flex flex-col gap-6 p-6 text-justify">
             <div>
@@ -16,7 +20,10 @@ export default function ProblemOnePage() {
                 <div>#1 Where nums = [4, 3, 2, 7, 8, 2, 3, 1], the result is [5, 6] </div>
                 <div>#2 Where nums = [1, 1], the result is [2]</div>
             </div>
-            <div className="font-bold">Solution</div>
+            <div>
+                <div className="font-bold">Solution</div>
+                <Code text={solutionString} />
+            </div>
             <div className="font-bold">Time and Space Complexity</div>
             <div className="font-bold">Demo</div>
         </div>
