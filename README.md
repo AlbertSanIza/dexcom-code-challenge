@@ -40,7 +40,7 @@ You can also try each solution with your own values by performing the following 
 curl --location 'http://dexcom-code-challenge.vercel.app/api/problem/1' \
 --header 'Content-Type: application/json' \
 --data '{
-    "nums": [4,3,2,7,8,2,3,1]
+    "nums": [4, 3, 2, 7, 8, 2, 3, 1]
 }'
 ```
 
