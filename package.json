@@ -8,8 +8,8 @@
         "start": "next start",
         "lint": "next lint",
         "uninstall": "node uninstall.js",
-        "test": "jest",
-        "test:watch": "jest --watch"
+        "test": "jest --verbose",
+        "test:watch": "jest --watch --verbose"
     },
     "dependencies": {
         "@types/jest": "^29.5.3",
@@ -35,7 +35,6 @@
     "jest": {
         "moduleFileExtensions": [
             "js",
-            "json",
             "ts"
         ],
         "testRegex": ".*\\.spec\\.ts$",
