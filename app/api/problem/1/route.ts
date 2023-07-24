@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 
-import solution from '@/utils/solution-1'
+import solution from '@/solutions/problem-1'
 
 export async function POST(request: Request) {
     const body = await request.json()
