@@ -29,7 +29,23 @@ describe('Problem 2', () => {
         const nums = [1, 2, 3, 4, 5, 6, 7]
         const target = 4
 
-        const expected: number[] = []
+        const expected = [0, 2]
+
+        expect(solution(nums, target)).toEqual(expected)
+    })
+    it('Where nums = [1, -5, -5, 1] and target = -10, the result is [1, 2]', () => {
+        const nums = [1, -5, -5, 1]
+        const target = -10
+
+        const expected = [1, 2]
+
+        expect(solution(nums, target)).toEqual(expected)
+    })
+    it('Where nums = [1, -5, -5, 1] and target = -10, the result is [1, 2]', () => {
+        const nums = [-5, 1, 1, -5]
+        const target = -10
+
+        const expected = [0, 3]
 
         expect(solution(nums, target)).toEqual(expected)
     })

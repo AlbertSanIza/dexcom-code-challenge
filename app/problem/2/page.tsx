@@ -30,7 +30,7 @@ export default async function ProblemTwoPage() {
             <div>
                 <div className="font-bold">Complexity</div>
                 <div>Time: O(n) where n is the length of the input array nums</div>
-                <div>Space: O(2) where 2 is the max amount of elements in the resulting indices</div>
+                <div>Space: O(k) where k is the length of the input array nums as a new object</div>
             </div>
             <TestComponent />
         </div>
