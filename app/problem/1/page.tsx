@@ -1,3 +1,4 @@
+import TestComponent from '@/app/problem/1/test'
 import Button from '@/components/Button'
 import Code from '@/components/Code'
 import getSolutionString from '@/utils/getSolutionString'
@@ -25,7 +26,7 @@ export default async function ProblemOnePage() {
                 <Code text={solutionString} />
             </div>
             <div className="font-bold">Time and Space Complexity</div>
-            <div className="font-bold">Demo</div>
+            <TestComponent />
         </div>
     )
 }
