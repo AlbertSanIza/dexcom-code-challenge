@@ -25,7 +25,11 @@ export default async function ProblemOnePage() {
                 <div className="font-bold">Solution (Typescript)</div>
                 <Code text={solutionString} />
             </div>
-            <div className="font-bold">Time and Space Complexity</div>
+            <div>
+                <div className="font-bold">Complexity</div>
+                <div>Time: O(n) where n is the length of the input array nums</div>
+                <div>Space: O(k) where k is the number of elements in the resulting missing numbers</div>
+            </div>
             <TestComponent />
         </div>
     )
