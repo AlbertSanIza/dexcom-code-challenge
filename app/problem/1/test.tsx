@@ -58,7 +58,7 @@ export default function TestComponent() {
                 </button>
             </div>
             {result && (
-                <div>
+                <div className="mt-6">
                     <div className="font-bold">Result </div>
                     <Code text={result} language="json" />
                 </div>
