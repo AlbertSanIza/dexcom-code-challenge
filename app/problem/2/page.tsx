@@ -23,7 +23,7 @@ export default async function ProblemTwoPage() {
                 <div>#3 Where nums = [3, 3] and target = 6, the result is [0, 1]</div>
             </div>
             <div>
-                <div className="font-bold">Solution</div>
+                <div className="font-bold">Solution (Typescript)</div>
                 <Code text={solutionString} />
             </div>
         </div>

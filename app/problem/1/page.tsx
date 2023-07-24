@@ -21,7 +21,7 @@ export default async function ProblemOnePage() {
                 <div>#2 Where nums = [1, 1], the result is [2]</div>
             </div>
             <div>
-                <div className="font-bold">Solution</div>
+                <div className="font-bold">Solution (Typescript)</div>
                 <Code text={solutionString} />
             </div>
             <div className="font-bold">Time and Space Complexity</div>
