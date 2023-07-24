@@ -4,16 +4,15 @@ import { useState } from 'react'
 import Code from '@/components/Code'
 
 export default function TestComponent() {
+    const [result, setResult] = useState('')
     const [validNums, setValidNums] = useState(true)
     const [nums, setNums] = useState('[4, 3, 2, 7, 8, 2, 3, 1]')
-    const [result, setResult] = useState('')
 
     const onChange = (event: any) => {
         setNums(event.target.value)
-
         try {
             const numsArray = JSON.parse(event.target.value)
-            if (Array.isArray(numsArray)) {
+            if (Array.isArray(numsArray) && numsArray.every((num) => typeof num === 'number')) {
                 setValidNums(true)
             } else {
                 setValidNums(false)
@@ -29,17 +28,16 @@ export default function TestComponent() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: nums,
+            body: JSON.stringify({ nums: JSON.parse(nums) }),
         })
         const data = await response.json()
         setResult(JSON.stringify(data, null, 2))
-        console.log(data)
     }
 
     return (
         <div>
             <div className="font-bold">Demo </div>
-            <div className="mb-6 flex w-full items-end gap-6">
+            <div className="flex w-full items-end gap-6">
                 <div className="w-full">
                     <label htmlFor="comment" className=" text-sm font-medium leading-6 text-gray-900">
                         nums
@@ -59,7 +57,12 @@ export default function TestComponent() {
                     Run
                 </button>
             </div>
-            {result && <Code text={result} language="json" />}
+            {result && (
+                <div>
+                    <div className="font-bold">Result </div>
+                    <Code text={result} language="json" />
+                </div>
+            )}
         </div>
     )
 }
