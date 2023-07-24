@@ -50,8 +50,8 @@ curl --location 'http://dexcom-code-challenge.vercel.app/api/problem/1' \
 curl --location 'http://dexcom-code-challenge.vercel.app/api/problem/2' \
 --header 'Content-Type: application/json' \
 --data '{
-"nums": [3, 2, 4],
-"target": 6
+    "nums": [3, 2, 4],
+    "target": 6
 }'
 ```
 
