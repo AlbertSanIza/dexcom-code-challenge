@@ -32,6 +32,9 @@ export default function TestComponent() {
         })
         const data = await response.json()
         setResult(JSON.stringify(data, null, 4))
+        setTimeout(() => {
+            window.scrollTo(0, document.body.scrollHeight)
+        }, 10)
     }
 
     return (
