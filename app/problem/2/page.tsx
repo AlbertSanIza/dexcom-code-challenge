@@ -1,3 +1,4 @@
+import TestComponent from '@/app/problem/2/test'
 import Button from '@/components/Button'
 import Code from '@/components/Code'
 import getSolutionString from '@/utils/getSolutionString'
@@ -25,6 +26,7 @@ export default async function ProblemTwoPage() {
             <div>
                 <div className="font-bold">Solution (Typescript)</div>
                 <Code text={solutionString} />
+                <TestComponent />
             </div>
         </div>
     )
